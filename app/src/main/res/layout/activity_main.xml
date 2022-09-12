@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/grad">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đỗ Thị Hồng Khánh"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="Danh sách môn học"
+            android:textSize="30dp"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etxtAddMH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhap mon hoc can them"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp">
+            <ImageButton
+                android:id="@+id/imabuttonThem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons8_add_100"
+                android:background="@null"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="40dp"/>
+
+            <ImageButton
+                android:id="@+id/imabuttonSua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons8_available_updates_100"
+                android:background="@null"
+                android:layout_marginRight="40dp"/>
+            <ImageButton
+                android:id="@+id/imabuttonXoa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons_remove_100"
+                android:background="@null"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listviewMonHoc"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+    </LinearLayout>
+</RelativeLayout>
